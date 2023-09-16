@@ -65,6 +65,7 @@ button {
     cursor: pointer;
 }
 
+/* general */
 body {
     font-weight: 400;
     font-family: 'varta-400', sans-serif;
@@ -77,6 +78,18 @@ body {
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.site-title {
+    font-size: 55px;
+    font-weight: 300;
+    font-family: 'merri-300', sans-serif;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'varta-400', sans-serif;
 }
 
 /* header */
@@ -129,3 +142,48 @@ body {
     font-size: 26px;
 }
 
+
+/* Side */
+.side .container {
+    display: flex;
+    align-items: start;
+    gap: 48px;
+}
+
+.side .container .start .site-title {
+    width: 458px;
+    padding-bottom: 30px;
+}
+
+.side .container .start a {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'varta-700', sans-serif;
+    color: var(--terracota);
+}
+
+.side .container .list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.side .container .list .text {
+    width: 258px;
+    height: 167px;
+}
+
+.side .container .list .text h3 {
+    font-size: 25px;
+    font-family: 'varta-600', sans-serif;
+    font-weight: 600;
+    color: var(--terracota);
+    padding-bottom: 12px;
+}
+
+.side .container .list .text p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'varta-400', sans-serif;
+}
