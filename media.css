@@ -1,5 +1,9 @@
 /* 1025 */
-@media(max-width: 1025px) {}
+@media(max-width: 1025px) {
+    .header .navbar .container .left .logo-media{
+        display: none;
+    }
+}
 
 /* 770 */
 @media(max-width:770px) {
@@ -44,7 +48,12 @@
 
 /* 520 */
 @media(max-width:520px) {
-
+    .header .navbar .container .left .logo{
+        display: none;
+    }
+    .header .navbar .container .left .logo-media{
+        display: block;
+    }
     .header .hero .container .site-title, 
     .header .hero .container .subtitle, 
     .header .hero .container h1, 
