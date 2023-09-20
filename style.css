@@ -103,8 +103,8 @@ body {
     right: 0;
     top: 0;
     z-index: -1;
-    background: url(img/hero-bg.jpg) no-repeat right / contain;
-    width: 100%;
+    background: url(img/hero-bg.jpg) no-repeat right / cover;
+    width: 50%;
     height: 100vh;
 }
 
@@ -164,14 +164,106 @@ body {
     color: var(--white);
 }
 
+.header .hero .container h1 {
+    color: var(--terracota);
+    max-width: 420px;
+}
+
+.header .hero .container .site-title {
+    max-width: 420px;
+    padding: 50px 0 30px;
+}
+
+.header .hero .container .subtitle {
+    max-width: 320px;
+    margin-bottom: 48px;
+}
+
+.header .hero .container a {
+    padding-bottom: 215px;
+}
+
+.header .hero .container a i {
+    font-size: 25px;
+    padding: 5px;
+    color: var(--terracota);
+    border: 2px solid var(--terracota);
+    border-radius: 50%;
+}
+
+/* find */
+.find .container .start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 48px 0 64px;
+    max-width: 1140px;
+}
+
+.find .container .site-title{
+    max-width: 420px;
+}
+
+.find .container .start .subtitle {
+    max-width: 165px;
+}
+
+.find .container .start .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.find .container .start .card p {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: var(--terracota);
+    font-size: 55px;
+    font-family: 'merri-300', sans-serif;
+    font-weight: 300;
+}
+
+.find .container .start .card:last-child p {
+    left: 35%;
+    top: 25%;
+}
+
+.find .container .start img {
+    position: relative;
+    max-width: 260px;
+    height: 260px;
+}
+
+.find .container .slide{
+    display: flex;
+    gap: 200px;
+    padding-bottom: 70px;
+}
+
+.find .container .slide p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'varta-400',sans-serif;
+}
+
+.find .container .slide h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'varta-700',sans-serif;
+    color: var(--terracota);
+}
+
 
 /* Side */
 .side .container {
     display: flex;
     align-items: start;
     justify-content: center;
-    /* flex-wrap: wrap; */
     gap: 48px;
+    padding: 64px 0 70px;
 }
 
 .side .container .start .site-title {
