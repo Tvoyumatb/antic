@@ -122,6 +122,10 @@ body {
     gap: 35px;
 }
 
+.header .navbar .container .left .logo-media{
+    display: none;
+}
+
 .header .navbar .container .left .menu {
     display: flex;
     align-items: center;
@@ -139,6 +143,7 @@ body {
 .header .navbar .container .left .menu .link:hover {
     text-decoration: underline;
 }
+
 
 .header .container .right a {
     width: 50px;
@@ -200,7 +205,7 @@ body {
     max-width: 1140px;
 }
 
-.find .container .site-title{
+.find .container .site-title {
     max-width: 420px;
 }
 
@@ -213,7 +218,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 32px;
+    /* gap: 32px; */
+    max-width: 450px;
 }
 
 .find .container .start .card p {
@@ -237,22 +243,22 @@ body {
     height: 260px;
 }
 
-.find .container .slide{
+.find .container .slide {
     display: flex;
     gap: 200px;
     padding-bottom: 70px;
 }
 
-.find .container .slide p{
+.find .container .slide p {
     font-size: 18px;
     font-weight: 400;
-    font-family: 'varta-400',sans-serif;
+    font-family: 'varta-400', sans-serif;
 }
 
-.find .container .slide h3{
+.find .container .slide h3 {
     font-size: 20px;
     font-weight: 700;
-    font-family: 'varta-700',sans-serif;
+    font-family: 'varta-700', sans-serif;
     color: var(--terracota);
 }
 
@@ -263,11 +269,11 @@ body {
     align-items: start;
     justify-content: center;
     gap: 48px;
-    padding: 64px 0 70px;
+    padding: 64px 15px 70px;
 }
 
 .side .container .start .site-title {
-    width: 458px;
+    max-width: 700px;
     padding-bottom: 30px;
 }
 
@@ -282,12 +288,12 @@ body {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px;
 }
 
 .side .container .list .text {
-    width: 258px;
-    height: 167px;
+    max-width: 258px;
 }
 
 .side .container .list .text h3 {

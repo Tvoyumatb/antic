@@ -1,9 +1,5 @@
 /* 1025 */
-@media(max-width: 1025px) {
-    .header .navbar .container .left .logo-media{
-        display: none;
-    }
-}
+
 
 /* 770 */
 @media(max-width:770px) {
@@ -20,7 +16,13 @@
 
     .side .container .list {
         justify-content: flex-start;
-        gap: 50px;
+        gap: 50px 0;
+        padding: 0 32px;
+
+    }
+
+    .side .container .list .text {
+        max-width: 100%;
     }
 
 }
@@ -44,30 +46,75 @@
     .find .container .start .card:last-child {
         display: none;
     }
-}
-
-/* 520 */
-@media(max-width:520px) {
-    .header .navbar .container .left .logo{
-        display: none;
-    }
-    .header .navbar .container .left .logo-media{
-        display: block;
-    }
-    .header .hero .container .site-title, 
-    .header .hero .container .subtitle, 
-    .header .hero .container h1, 
-    .header .hero .container a i {
-        color: white;
-        text-align: center;
-        border-color: white;
-    }
 
     .header::after {
         width: 100%;
         height: 100%;
         background: url(img/hero-bg-media.png) no-repeat center / cover;
     }
+
+    .header .hero .container .site-title,
+    .header .hero .container .subtitle,
+    .header .hero .container h1,
+    .header .hero .container a i {
+        color: white;
+        text-align: center;
+        border-color: white;
+    }
+
+    .header .hero .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header .hero .container .subtitle {
+        align-items: center;
+    }
+
+    .header .navbar .container .left .logo {
+        display: none;
+    }
+
+    .header .navbar .container .left .logo-media {
+        display: block;
+    }
+
+    .side .container .start .site-title,
+    .side .container .start a {
+        padding: 0 30px 30px;
+    }
+}
+
+/* 520 */
+@media(max-width:520px) {
+    .header {
+        padding: 50px 0;
+    }
+
+    .header .navbar .container {
+        padding-top: 0;
+    }
+
+    .header .hero .container a {
+        padding: 0;
+    }
+
+
+    .find .container .start .card p {
+        font-size: 35px;
+    }
+
+    .find .container .site-title {
+        margin-top: 20px;
+        font-size: 45px;
+    }
+
+    .find .container .slide {
+
+        padding: 0;
+    }
+
 }
 
 @media(max-width: 425px) {}
